@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 78.0, 1071.0, 788.0 ],
+		"rect" : [ 34.0, 78.0, 813.0, 788.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 287.333344, 590.5, 83.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess -12"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
@@ -2153,8 +2166,8 @@
 											}
 , 											{
 												"box" : 												{
-													"addpoints" : [ 0.790323, 0.027778, 0, 3.556452, 0.513889, 0, 13.435484, 0.666667, 0, 20.548388, 0.513889, 0, 29.637096, 0.597222, 0, 37.935482, 0.763889, 0, 42.677418, 0.583333, 0, 49.0, 0.472222, 0 ],
-													"domain" : 49.0,
+													"addpoints" : [ 2.887098, 0.027778, 0, 12.991937, 0.513889, 0, 49.080647, 0.666667, 0, 75.064514, 0.513889, 0, 108.266129, 0.597222, 0, 138.580643, 0.763889, 0, 155.903214, 0.583333, 0, 179.0, 0.472222, 0 ],
+													"domain" : 179.0,
 													"id" : "obj-23",
 													"maxclass" : "function",
 													"numinlets" : 1,
@@ -6129,7 +6142,7 @@
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
 					"patching_rect" : [ 61.333313, 590.5, 136.0, 38.0 ],
-					"presentation_rect" : [ 225.0, 225.0, 50.0, 24.0 ],
+					"presentation_rect" : [ 225.0, 225.0, 50.0, 38.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[2]",
@@ -6963,6 +6976,13 @@
 					"destination" : [ "obj-286", 0 ],
 					"midpoints" : [ 624.5, 476.999969, 471.416656, 476.999969, 471.416656, 477.333313, 318.333313, 477.333313 ],
 					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-71", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
